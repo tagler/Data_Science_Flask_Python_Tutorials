@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3 style="margin-bottom:0px;"> Plots: </h3>
+<div class="plot" id="plot_1" style="margin-top:0px;">
+    <script>
+        var graphs_1 = {{plot_1 | safe}};
+        Plotly.plot('plot_1', graphs_1, {});
+    </script>
+</div>
+<div class="plot" id="plot_2">
+    <script>
+        var graphs_2 = {{plot_2 | safe}};
+        Plotly.plot('plot_2', graphs_2, {});
+    </script>
+</div>
+<div class="plot" id="plot_3">
+    <script>
+        var graphs_3 = {{plot_3 | safe}};
+        Plotly.plot('plot_3', graphs_3, {});
+    </script>
+</div>
+{% endblock %}

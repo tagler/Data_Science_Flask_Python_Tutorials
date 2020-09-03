@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Iris Machine Learning App:</h3>
+<div class="form-wrapper">
+    <form action = "{{ url_for('index') }}" method = "POST">
+        {{ form.csrf_token }}
+        <div class="form-group">
+            <div class="form-label"> {{ form.sepal_length.label }}</div>
+            <div class="form-field"> {{ form.sepal_length(size=25, placeholder="Enter Value") }} </div>
+        </div>
+        <div class="form-group">
+            <div class="form-label"> {{ form.sepal_width.label }}</div>
+            <div class="form-field"> {{ form.sepal_width(size=25, placeholder="Enter Value") }} </div>
+        </div>
+        <div class="form-group">
+            <div class="form-label"> {{ form.petal_length.label }}</div>
+            <div class="form-field"> {{ form.petal_length(size=25, placeholder="Enter Value") }} </div>
+        </div>
+        <div class="form-group">
+            <div class="form-label"> {{ form.petal_width.label }}</div>
+            <div class="form-field"> {{ form.petal_width(size=25, placeholder="Enter Value") }} </div>
+        </div>
+        {{ form.submit }}
+    </form>
+  </div>
+{% endblock %}

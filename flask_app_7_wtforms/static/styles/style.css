@@ -1,0 +1,15 @@
+/* use cmd+shirt+r to reload css cache */
+body {
+    background-color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+h2 { 
+    color: navy;
+    margin-bottom: 20px;
+}

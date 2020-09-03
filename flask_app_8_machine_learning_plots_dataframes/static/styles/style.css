@@ -1,0 +1,28 @@
+/* use cmd+shirt+r to reload css cache */
+body {
+    background-color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+h3 { 
+    color: slategray;
+    font-size:25px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-field {
+    font-size:12px;
+}
+
+.table {
+    width: auto;
+    border-width: 1px;
+    border-color: gainsboro;
+}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2> Uploaded File Statistics: </h2>
+<ul style="padding-left:30px;">
+    <li> Count: {{ result_count }} </li>
+    <li> Sum: {{ result_sum }} </li>
+    <li> Max: {{ result_max }} </li>
+    <li> Min: {{ result_min }} </li>
+</ul>
+{% endblock %}

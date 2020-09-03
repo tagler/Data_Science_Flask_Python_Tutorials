@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>About:</h3>
+<p> {{ about }} </p>
+<div>
+    <!-- if else statement  -->
+    {% if my_boolean == True: %}
+    <p style="margin-bottom: 5px;">Species List:</p>
+    <ul>
+        <!-- for loop  -->
+        {% for each in my_list %}
+        <li>{{ each }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    {% endif %}
+</div>
+{% endblock %}

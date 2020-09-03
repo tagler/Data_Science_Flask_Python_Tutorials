@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- child template  -->
+<div>
+    <!-- variables  -->
+    <p>{{ my_message }}</p>
+    <p>{{ my_list }}</p>
+    <p>My List:</p>
+    <ul>
+        <!-- for loop  -->
+        {% for each in my_list %}
+        <li>{{ each }}</li>
+        {% endfor %}
+    </ul>
+    <!-- if else statement  -->
+    {% if my_message == "Hello World!": %}
+    <p>Hello World Again!</p>
+    {% else %}
+    <p>Goodbye World!</p>
+    {% endif %}
+</div>
+{% endblock %}

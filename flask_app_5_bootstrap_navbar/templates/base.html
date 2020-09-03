@@ -1,0 +1,17 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block styles %}
+{{super()}}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+{% endblock %}
+
+{% block title %}
+Application Title  
+{% endblock %}
+
+{% block navbar %}
+{{nav.top.render(id='top-navbar')}}
+{% endblock %}
+
+{% block content %}
+{% endblock %}

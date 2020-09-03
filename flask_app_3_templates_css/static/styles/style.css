@@ -1,0 +1,15 @@
+/* use cmd+shirt+r to reload css cache */
+body {
+    background-color: white;
+}
+h1 {
+    color: darkred;
+    font-size: 40px;
+    font-weight: bolder;
+}
+p {
+    color: black;
+}
+ul {
+    color: black;
+}
